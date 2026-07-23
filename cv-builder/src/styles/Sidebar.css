@@ -1,0 +1,6 @@
+.sidebar {
+  background-color: var(--bg-main);
+  width: 450px;
+  padding: 20px;
+  overflow-y: auto;
+}
