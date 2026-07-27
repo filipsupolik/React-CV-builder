@@ -3,7 +3,7 @@ import "./styles/Sidebar.css";
 import Section from "./components/Section";
 function SideBar() {
   const generalInfoFields = [
-    { name: "name", label: "name", type: "text" },
+    { name: "name", label: "Name", type: "text" },
     { name: "email", label: "Email", type: "email" },
     { name: "phoneNumber", label: "Phone Number", type: "tel" },
   ];
@@ -36,7 +36,6 @@ function SideBar() {
   ];
   return (
     <>
-      <h2>Edit CV</h2>
       <Section title={"General Information"} fields={generalInfoFields} />
       <Section title={"Education"} fields={educationFields} />
       <Section title={"Work Experience"} fields={experienceFields} />
