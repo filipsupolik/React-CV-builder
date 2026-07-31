@@ -2,9 +2,10 @@ import "../styles/Section.css";
 
 import FormField from "./FormField";
 import { AddButton, DeleteButton } from "./Buttons";
+
 function Section({ title, fields }) {
   return (
-    <div className="section">
+    <section className="section">
       <h2 className="section-title">{title}</h2>
       <div className="input-fields">
         {fields.map((field) => (
@@ -20,6 +21,22 @@ function Section({ title, fields }) {
         <AddButton label={title} />
         <DeleteButton />
       </div>
+    </section>
+  );
+}
+
+export function PreviewSection() {
+  return <section></section>;
+}
+
+export function PreviewHeader({ info }) {
+  return (
+    <div className="preview-header" id={info.name}>
+      <h1>{info.name || "Jon Doe"}</h1>
+      <p>
+        {info.email && <span>📧 {info.email}</span>}
+        {info.phone && <span>📞{info.phone}</span>}
+      </p>
     </div>
   );
 }

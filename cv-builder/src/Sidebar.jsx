@@ -5,7 +5,7 @@ function SideBar() {
   const generalInfoFields = [
     { name: "name", label: "Name", type: "text" },
     { name: "email", label: "Email", type: "email" },
-    { name: "phoneNumber", label: "Phone Number", type: "tel" },
+    { name: "phoneNumber", label: "Phone Number", type: "text" },
   ];
 
   const educationFields = [

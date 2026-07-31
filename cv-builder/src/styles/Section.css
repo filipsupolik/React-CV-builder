@@ -3,6 +3,7 @@
   margin: 16px;
   padding: 10px;
   background-color: white;
+  box-shadow: 0 4px 12px #0000000d;
 }
 
 .section-title {
@@ -20,4 +21,10 @@
 .buttons {
   display: flex;
   justify-content: space-between;
+}
+
+.preview-header p {
+  color: #6b7280;
+  font-size: 14px;
+  margin: 0 0 16px 0;
 }
