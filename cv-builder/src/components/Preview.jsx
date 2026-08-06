@@ -1,6 +1,6 @@
-import "./styles/Preview.css";
+import "../styles/Preview.css";
 
-import { PreviewHeader, PreviewSection } from "./components/Section";
+import { PreviewHeader, PreviewSection } from "./PreviewSection";
 
 function Preview({ personalInfo }) {
   return (
