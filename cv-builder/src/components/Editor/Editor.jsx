@@ -1,12 +1,11 @@
-import PersonalInfoEdit from "./PersonalInfo";
+import Form from "./Form/Form";
 
-export default function Editor() {
+function Editor() {
   return (
-    <div className="editor">
-      <h2 className="page-name">Resume Builder</h2>
-      <p className="tagline">Your custom profesional resume builder</p>
-
-      <PersonalInfoEdit />
-    </div>
+    <>
+      <Form />
+    </>
   );
 }
+
+export default Editor;
