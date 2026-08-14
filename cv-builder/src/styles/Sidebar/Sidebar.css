@@ -1,0 +1,12 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0 8rem 0 5rem;
+}
+
+.sidebar div {
+  min-height: 4rem;
+  min-width: 4rem;
+}

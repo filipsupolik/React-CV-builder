@@ -1,4 +1,13 @@
-import { FaGrip, FaAngleRight, FaAngleLeft } from "react-icons/fa6";
+import "../styles/Buttons.css";
+
+import {
+  FaGrip,
+  FaAngleRight,
+  FaAngleLeft,
+  FaCircle,
+  FaEye,
+  FaFillDrip,
+} from "react-icons/fa6";
 
 function LayoutSortableBtn() {
   return (
@@ -26,4 +35,36 @@ function NextBtn() {
   );
 }
 
-export { LayoutSortableBtn, NextBtn };
+function ModeBtn() {
+  return (
+    <div className="mode-btn-div">
+      <button type="button" className="mode-btn">
+        <>
+          <FaCircle className="dual-icon-1" />
+          <FaCircle className="dual-icon-2" />
+        </>
+      </button>
+    </div>
+  );
+}
+
+function PreviewBtn() {
+  return (
+    <div className="prev-btn-div">
+      <button type="button" className="preview-btn">
+        <FaEye />
+      </button>
+    </div>
+  );
+}
+
+function FillBtn() {
+  return (
+    <div className="fill-btn-div">
+      <button type="button" className="fill-btn">
+        <FaFillDrip />
+      </button>
+    </div>
+  );
+}
+export { LayoutSortableBtn, NextBtn, ModeBtn, PreviewBtn, FillBtn };

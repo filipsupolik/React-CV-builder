@@ -1,3 +1,5 @@
+import "../../../../styles/Editor/Form/FormSection/Personal.css";
+
 function Personal() {
   return (
     <div className="personal-container">
@@ -39,29 +41,29 @@ function Personal() {
             placeholder="0948-864-319"
           />
         </div>
-        <div className="form-field">
-          <label>
-            <span>
-              Address <span>optional</span>
-            </span>
-          </label>
-          <input
-            type="address"
-            name="address"
-            placeholder="Blue Island, Metaverse"
-          />
-        </div>
-        <div className="form-field">
-          <label>
-            <span>
-              Summary <span>optional</span>
-            </span>
-          </label>
-          <textarea
-            name="summary"
-            placeholder="As a Principal Software Engineer, I excel in designing and developing robust and scalable software solutions ..."
-          ></textarea>
-        </div>
+      </div>
+      <div className="form-field">
+        <label>
+          <span>
+            Address <span>optional</span>
+          </span>
+        </label>
+        <input
+          type="address"
+          name="address"
+          placeholder="Blue Island, Metaverse"
+        />
+      </div>
+      <div className="form-field">
+        <label>
+          <span>
+            Summary <span>optional</span>
+          </span>
+        </label>
+        <textarea
+          name="summary"
+          placeholder="As a Principal Software Engineer, I excel in designing and developing robust and scalable software solutions ..."
+        ></textarea>
       </div>
     </div>
   );

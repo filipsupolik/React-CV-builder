@@ -1,3 +1,5 @@
+import "../../../styles/Editor/Form/Form.css";
+
 import Personal from "./FormSections/PersonalInfo";
 import FormTitle from "./FormTitle";
 

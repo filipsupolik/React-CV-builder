@@ -1,3 +1,5 @@
+import "../../../styles/Editor/Form/FormTitle.css";
+
 import { NextBtn } from "../../Buttons";
 
 function FormTitle() {

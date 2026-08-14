@@ -1,0 +1,47 @@
+.personal-container {
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+}
+
+.personal-input-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-height: 35%;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-field input,
+.form-field textarea {
+  background-color: var(--input-bg);
+  color: var(--color-text);
+  font-size: 0.9rem;
+  padding: 12px;
+  outline: none;
+}
+
+.form-field input[type="text"],
+.form-field input[type="email"],
+.form-field input[type="tel"],
+.form-field input[type="address"] {
+  height: 3rem;
+  appearance: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.form-field > label > span > span {
+  font-weight: 200;
+  font-size: 0.8rem;
+}

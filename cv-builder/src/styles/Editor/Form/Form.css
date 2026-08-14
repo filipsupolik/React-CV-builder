@@ -1,0 +1,13 @@
+.form-container {
+  height: 100%;
+  padding: 8rem 10rem;
+}
+
+.form {
+  border: 1px groove var(--input-bg);
+  border-radius: 10px;
+  padding: 2rem;
+  margin-top: 1rem;
+  min-height: 90%;
+  max-width: 1100px;
+}
