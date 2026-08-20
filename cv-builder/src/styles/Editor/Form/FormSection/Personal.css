@@ -1,19 +1,28 @@
 .personal-container {
   display: flex;
   flex-direction: column;
-  height: 60vh;
+  height: auto;
 }
 
 .personal-input-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 1rem 2rem;
   min-height: 35%;
 }
 
 .form-field {
   display: flex;
   flex-direction: column;
+  min-width: 0;
+}
+
+.personal-input-container .form-field {
+  flex: 1 1 calc(50% - 1rem);
+}
+
+.personal-container > .form-field {
+  width: 100%;
 }
 
 .form-field label {
@@ -22,26 +31,45 @@
   gap: 0.5rem;
 }
 
+.form-field label > span {
+  font-size: 1.25rem;
+}
+
 .form-field input,
 .form-field textarea {
   background-color: var(--input-bg);
   color: var(--color-text);
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   padding: 12px;
+  width: 100%;
   outline: none;
 }
 
-.form-field input[type="text"],
-.form-field input[type="email"],
-.form-field input[type="tel"],
-.form-field input[type="address"] {
+.form-field input {
   height: 3rem;
   appearance: none;
   border: none;
   border-radius: 5px;
 }
 
+.personal-container > .form-field textarea {
+  min-height: 12rem;
+  resize: vertical;
+  border: none;
+  border-radius: 10px;
+}
+
+.personal-container > .form-field:last-child {
+  margin-top: 1.5rem;
+}
+
 .form-field > label > span > span {
   font-weight: 200;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 700px) {
+  .personal-input-container .form-field {
+    flex-basis: 100%;
+  }
 }

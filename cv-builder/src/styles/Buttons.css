@@ -41,3 +41,9 @@ svg {
   color: black;
   padding-left: 1rem;
 }
+
+.select-close-btn {
+  border-radius: 3px;
+  height: 1.8rem;
+  width: 3rem;
+}

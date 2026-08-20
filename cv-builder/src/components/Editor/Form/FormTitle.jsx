@@ -2,11 +2,11 @@ import "../../../styles/Editor/Form/FormTitle.css";
 
 import { NextBtn } from "../../Buttons";
 
-function FormTitle() {
+function FormTitle({ handleNext }) {
   return (
     <div className="form-title-div">
       <h3>Personal Details</h3>
-      <NextBtn />
+      <NextBtn handleNext={handleNext} />
     </div>
   );
 }

@@ -3,10 +3,10 @@ import "../../../styles/Editor/Form/Form.css";
 import Personal from "./FormSections/PersonalInfo";
 import FormTitle from "./FormTitle";
 
-function Form() {
+function Form({ handleNext }) {
   return (
     <div className="form-container">
-      <FormTitle />
+      <FormTitle handleNext={handleNext} />
       <form className="form">
         <Personal />
       </form>

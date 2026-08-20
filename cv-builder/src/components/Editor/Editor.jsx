@@ -1,9 +1,9 @@
 import Form from "./Form/Form";
 
-function Editor() {
+function Editor({ handleNext }) {
   return (
     <>
-      <Form />
+      <Form handleNext={handleNext} />
     </>
   );
 }

@@ -24,10 +24,14 @@ function LayoutSortableBtn() {
   );
 }
 
-function NextBtn() {
+function NextBtn({ handleNext }) {
+  const toggleNext = () => {
+    handleNext(true);
+  };
+
   return (
     <div className="next-btn-div">
-      <button type="button" className="next-btn">
+      <button type="button" className="next-btn" onClick={toggleNext}>
         Next
         <FaAngleRight />
       </button>
@@ -67,4 +71,18 @@ function FillBtn() {
     </div>
   );
 }
-export { LayoutSortableBtn, NextBtn, ModeBtn, PreviewBtn, FillBtn };
+
+function CloseBtn({ handleClose }) {
+  const toggleClose = () => {
+    handleClose(false);
+  };
+
+  return (
+    <>
+      <button type="button" className="select-close-btn" onClick={toggleClose}>
+        X
+      </button>
+    </>
+  );
+}
+export { LayoutSortableBtn, NextBtn, ModeBtn, PreviewBtn, FillBtn, CloseBtn };
