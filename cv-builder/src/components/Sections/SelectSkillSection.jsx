@@ -1,5 +1,8 @@
+import "../../styles/Sections/SelectSkillsSection.css";
+
 import { FaLink } from "react-icons/fa6";
 import { CloseBtn } from "../Buttons";
+
 function Card() {
   return (
     <>
@@ -22,6 +25,8 @@ function SectionSelect({ handleClose }) {
           <CloseBtn handleClose={handleClose} />
         </div>
         <div className="select-list">
+          <Card />
+          <Card />
           <Card />
         </div>
       </div>
